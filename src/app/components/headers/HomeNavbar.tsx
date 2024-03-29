@@ -8,8 +8,9 @@ export function HomeNavbar() {
         <Container className="navbar-container">
             <Stack className="menu">
                 <Box>
-                    <NavLink to={"/"}></NavLink>
+                    <NavLink to={"/"}>
                        <img className="brand-logo" src="/icons/burak.svg"/>
+                    </NavLink>
                 </Box>
                 <Stack className="links">
 
@@ -34,7 +35,6 @@ export function HomeNavbar() {
                 <Box className={"hover-line"}>
                     <NavLink to="/help " activeClassName={"underline" }>Help</NavLink>
                 </Box>
-                {/** BASKET */}
 
                 {!authMember ? (<Box><Button variant="contained" className="login-button">Login</Button></Box>) : (<img className="user-avatar" 
                 src={"/icons/default-user.svg"}
