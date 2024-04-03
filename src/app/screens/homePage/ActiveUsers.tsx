@@ -26,6 +26,7 @@ export default function ActiveUsers() {
                                             <CardOverflow>
                                                <AspectRatio ratio="1">
                                                     <img src={ele.memberImage} alt="" />
+                                                    
                                                </AspectRatio>
                                             </CardOverflow>
                                             <CardOverflow>
