@@ -21,12 +21,15 @@ class Test extends Component {
   componentDidMount() {
     console.log("componentDidMount");
     // runs after first render => RETRIEVE DATA FROM BACKEND SERVER
+    // korinishi bilan bu faza ishga tushadi
   }
   componentWillUnmount() {
     console.log("componentWillUnmount");
     // runs before component unmount
+    //bu yoqolishdan oldin ishga tushadikan
   }
   componentDidUpdate() {}
+  //bu faza komponentimiz ozgarganda ishga tushadi
   render() {
     return (
       <div>
