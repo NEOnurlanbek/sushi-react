@@ -26,9 +26,10 @@ const popularDishesRetriver = createSelector(
 
 export default function HomePage() {
   const { setPopularDishes } = actionDispatch(useDispatch());
-  const { popularDishes } = useSelector(popularDishesRetriver);
+  // const { popularDishes } = useSelector(popularDishesRetriver);
 
- // Selector: Store => Data
+
+     //Selector: Store => Data
   useEffect(() => {
 
     // Beckend server data request => Data 
