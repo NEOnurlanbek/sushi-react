@@ -177,7 +177,10 @@ export default function Products() {
                                 const imagePath =`${serverApi}/${product.productImages[0]}`;
                                 const sizeVolume = product.productCollection === ProductCollection.DRINK ? product.productVolume +"liter" : product.productSize + " size";
                                 return(
-                                    <Stack key={product._id} className="product-card" onClick={() => chooseDishHandler(product._id)}>
+                                    <Stack 
+                                    key={product._id} 
+                                    className="product-card" 
+                                    onClick={() => chooseDishHandler(product._id)}>
                                         <Stack className={"product-img"} sx={{ backgroundImage: `url(${imagePath})`}}>
                                             <div className="product-sale">{sizeVolume}</div>
                                             <Button className="shop-btn">
