@@ -1,7 +1,7 @@
 import { createSelector } from "reselect";
 import { AppRootState } from "../../../lib/types/screen";
                  
-const selectOrdersPage = (state: AppRootState) => state.homePage;
+const selectOrdersPage = (state: AppRootState) => state.ordersPage;
 export const retrievePausedOrders = createSelector(
     selectOrdersPage,
   (OrdersPage) => OrdersPage.pausedOrders

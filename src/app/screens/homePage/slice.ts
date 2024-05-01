@@ -5,6 +5,9 @@ const initialState: HomePageState = {
   popularDishes: [],
   newDishes: [],
   topUsers: [],
+  finishedOrders: undefined,
+  processOrders: undefined,
+  pausedOrders: undefined
 };
 
 const homePageSlice = createSlice({
