@@ -1,4 +1,4 @@
-import { Box, Button, Container, ListItemIcon, Menu, MenuItem, Stack } from "@mui/material";
+import { Box, Button, Container, ListItemIcon, Menu, MenuItem, Stack, colors } from "@mui/material";
 import { NavLink } from "react-router-dom";
 import Basket from "./Basket";
 import { useEffect, useState } from "react";
@@ -32,8 +32,8 @@ export default function HomeNavbar(props: HomeNavbarProps) {
         <Container className="navbar-container">
             <Stack className="menu">
                 <Box>
-                    <NavLink to={"/"}>
-                       <img className="brand-logo" src="/icons/burak.svg"/>
+                    <NavLink to={"/"} className={"sushi"}>
+                      <h1>Sushi</h1>
                     </NavLink>
                 </Box>
                 <Stack className="links">
@@ -67,13 +67,15 @@ export default function HomeNavbar(props: HomeNavbarProps) {
                   onDeleteAll={onDeleteAll} />
 
                 {!authMember ? (<Box><Button variant="contained" className="login-button" onClick={() => setLoginOpen(true)}>Login</Button></Box>
-                ) : (
+                ) 
+                : (
                 <img 
                 className="user-avatar" 
                 src={authMember?.memberImage ? `${serverApi}/${authMember?.memberImage}` : "/icons/default-user.svg"}
                 aria-haspopup={"true"}
                 onClick={handleLogoutClick}
-                />)}
+                />)
+                }
 
 
 <Menu
@@ -123,9 +125,6 @@ export default function HomeNavbar(props: HomeNavbarProps) {
             </Stack>
             <Stack className={"heder-frame"}>
                 <Stack className={"detail"}>
-                    <Box className={"head-main-txt"}>World's Most Delicious Cousine</Box>
-                    <Box className={"wel-txt"}>The Choice, not just a Choice</Box>
-                    <Box className={"service-txt"}>24 hours service</Box>
                     <Box className={"signup"}>
                         {!authMember ? 
                         (

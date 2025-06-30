@@ -31,8 +31,10 @@ export default function OtherNavbar(props: OtherNavbarProps) {
         <Container className="navbar-container">
             <Stack className="menu">
                 <Box>
-                    <NavLink to="/">
-                        <img className="brand-logo" src="/icons/burak.svg" />
+                    <NavLink to="/" className={"sushi"}>
+                       <h1>
+                        Sushi
+                       </h1>
                     </NavLink>
                        
                 </Box>

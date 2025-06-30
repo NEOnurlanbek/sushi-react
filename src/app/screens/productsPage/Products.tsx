@@ -102,7 +102,7 @@ export default function Products(props: ProductsProps) {
             <Stack flexDirection={"column"} alignItems={"center"}>
                 <Stack className="avatar-big-box">
                     <Stack className={"top-text"}>
-                        <p>Burak Restaurant</p>
+                        <p>Sushi Restaurant</p>
                         <Stack className={"single-search-big-box"}>
                         <input
                            type={"search"}
@@ -248,13 +248,13 @@ export default function Products(props: ProductsProps) {
             <Box className="category-title"> Our Family Brands </Box>
                 <Stack className="cards-frame ">
                     <Box className="card">
-                        <img src="/img/gurme.webp" width={"260px"} height={"335px"}/></Box>
+                        <img src="/imgg/favicon.jpg" width={"260px"} height={"335px"}/></Box>
                     <Box className="card">
-                        <img src="/img/seafood.webp" width={"260px"} height={"335px"}/></Box>
+                        <img src="/imgg/favicon.jpg"  width={"260px"} height={"335px"}/></Box>
                     <Box className="card">
-                        <img src="/img/sweets.webp" width={"260px"} height={"335px"}/></Box>
+                        <img src="/imgg/favicon.jpg"  width={"260px"} height={"335px"}/></Box>
                     <Box className="card">
-                        <img src="/img/doner.webp" width={"260px"} height={"335px"}/></Box>
+                        <img src="/imgg/favicon.jpg"  width={"260px"} height={"335px"}/></Box>
                 </Stack>
             </Container>
         </div>

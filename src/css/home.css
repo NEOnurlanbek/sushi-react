@@ -7,7 +7,7 @@
 .homepage .static-frame {
     width: 100%;
     height: 236px;
-    background:  #343434;
+    background:  #706868;
 }
 
 .homepage .static-frame .info {
@@ -53,7 +53,8 @@ align-items: center;
     width: 100%;
     height: 580px;
     display: flex;
-    background: #f8f8ff;
+    background: #c4c8b2;
+    margin-top: 10px;
 }
 
 .homepage .popular-dishes-frame .popular-section {
@@ -71,15 +72,15 @@ align-items: center;
    font-weight: 600;
    line-height: normal;
    letter-spacing: 1.44px;
-   color: #000;
+   color: #0a0a0a;
  }
 
 .homepage .popular-dishes-frame .popular-section .cards-frame {
     width: 100%;
-    margin-top: 43px;
+    margin-top: 13px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    margin-right: 270px;
 
  }
 
@@ -87,6 +88,7 @@ align-items: center;
     min-height: 430px;
     min-width: 300px;
     cursor: pointer;
+    margin: 10px;
  }
 
  .homepage .popular-dishes-frame .cards-frame .card .card-cover {
@@ -117,7 +119,8 @@ align-items: center;
     width: 100%;
     height: 605px;
     display: flex;
-    background: #f8f8ff;
+    background: #c4c8b2;
+    margin-top: 10px;
  }
 
  .homepage .main {
@@ -141,7 +144,7 @@ align-items: center;
 
  .homepage .new-products-frame .main .cards-frame {
     width: 100%;
-    margin-top: 47px 2px 2px 2px;
+    margin-top: 60px;
     flex-direction: row;
     justify-content: space-between;
  }
@@ -150,6 +153,8 @@ align-items: center;
     height: 335px;
     width: 290px;
     cursor: pointer;
+    margin-right: 10px;
+    
  }
 
  
@@ -256,7 +261,8 @@ align-items: center;
    width: 100%;
    height: 550px;
    display: flex;
-   background: #f8f8ff;
+   background: #c4c8b2;
+   margin-top: 10px;
 }
 
 .homepage .active-users-frame .main {
@@ -264,7 +270,7 @@ align-items: center;
    display: flex;
    flex-direction: column;
    align-items: center;
-   background: #f8f8ff;
+   
 
 }
 
@@ -284,6 +290,7 @@ align-items: center;
    margin-top: 47px 2px 2px 2px;
    flex-direction: row;
    justify-content: space-between;
+   margin-top: 35px;
   
 }
 .homepage .cards-frame .card {
@@ -331,8 +338,9 @@ align-items: center;
 .homepage .events-frame {
    width: 100%;
    height: 745px;
-   background: #f8f8ff;
+   background: #c4c8b2;
    display: flex;
+   margin-top: 10px;
  }
  
  .homepage .events-frame .category-title {

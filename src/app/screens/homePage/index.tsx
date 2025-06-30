@@ -32,7 +32,7 @@ export default function HomePage() {
     const product = new ProductService();
     product.getProducts({
       page: 1,
-      limit: 4,
+      limit: 5,
       order: "productViews",
       productCollection: ProductCollection.DISH,
     }).then((data) => {
@@ -41,7 +41,7 @@ export default function HomePage() {
    
     product.getProducts({
       page: 1,
-      limit: 4,
+      limit: 5,
       order: "createdAt",
       productCollection: ProductCollection.DISH,
     }).then((data) => {
@@ -60,9 +60,9 @@ export default function HomePage() {
     return (<div className={"homepage"}>
       <Statistics/>
       <PopularDishes/>
-      <NewDishes/>
-      <Advertisement/>
+      <NewDishes/>    
       <ActiveUsers/>
       <Events/>
+      
     </div>);
   }
