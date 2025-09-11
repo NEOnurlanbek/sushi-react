@@ -32,7 +32,7 @@ export default function HomePage() {
     const product = new ProductService();
     product.getProducts({
       page: 1,
-      limit: 5,
+      limit: 4,
       order: "productViews",
       productCollection: ProductCollection.DISH,
     }).then((data) => {
@@ -41,7 +41,7 @@ export default function HomePage() {
    
     product.getProducts({
       page: 1,
-      limit: 5,
+      limit: 4,
       order: "createdAt",
       productCollection: ProductCollection.DISH,
     }).then((data) => {
@@ -53,7 +53,6 @@ export default function HomePage() {
   member.getTopUsers()
   .then((data) => setTopUsers(data))
   .catch((err) => console.log(err));
- 
   }, []);
 
 
